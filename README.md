@@ -1,69 +1,105 @@
-# Περιγραφή Εργασίας
+# Warehouse Inventory Management System
 
-Η εργασία αφορά την ανάπτυξη ενός προγράμματος διαχείρισης απογραφής αποθήκης. Το πρόγραμμα επιτρέπει στον χρήστη να επιλέγει λειτουργίες μέσα από ένα κεντρικό μενού και να εμφανίζει πληροφορίες σχετικά με τα διαθέσιμα είδη, τις ποσότητες τους και τα είδη που χρειάζονται επαναπαραγγελία.
+## Overview
 
-## Κεντρικό Μενού
+This project is a warehouse inventory management application developed in C# and SQL Server. The system allows users to search inventory items, view stock levels, monitor inventory across warehouse locations, and identify products that require replenishment.
 
-Με την εκκίνηση του προγράμματος εμφανίζεται ένα βασικό μενού επιλογών. Ο χρήστης μπορεί να επιλέξει μία από τις παρακάτω λειτουργίες:
+The application was designed to simplify inventory tracking and provide quick access to stock information through a user-friendly interface.
 
-1. Αναζήτηση είδους
-2. Γενική απογραφή
-3. Αναζήτηση ειδών προς επαναπαραγγελία
-4. Έξοδος από το πρόγραμμα
+## Features
 
-Κάθε επιλογή ανοίγει διαφορετική φόρμα, ώστε το πρόγραμμα να είναι οργανωμένο και εύκολο στη χρήση.
+### Item Search
 
-## Αναζήτηση Είδους
+Users can search for an item by:
 
-Στη φόρμα αναζήτησης είδους, ο χρήστης μπορεί να αναζητήσει ένα προϊόν είτε με βάση τον κωδικό του είτε πληκτρολογώντας μέρος από την περιγραφή/όνομά του.
+* Item code
+* Full item description
+* Partial item description
 
-Αν βρεθούν περισσότερα από ένα είδη με παρόμοιο όνομα, τα αποτελέσματα εμφανίζονται σε GridView. Από εκεί ο χρήστης μπορεί να επιλέξει το συγκεκριμένο είδος που τον ενδιαφέρει.
+If multiple matching items are found, the results are displayed in a DataGridView, allowing the user to select the desired item.
 
-Αφού επιλεγεί το είδος, το πρόγραμμα δίνει τις εξής επιλογές εμφάνισης:
+After selecting an item, the following information can be displayed:
 
-### 1. Συνολική απογραφή είδους
+#### Total Inventory
 
-Εμφανίζεται η συνολική ποσότητα του είδους σε όλες τις αποθήκες και τοποθεσίες μαζί.
+Displays the total quantity available across all warehouse locations.
 
-### 2. Απογραφή ανά τοποθεσία
+#### Inventory by Location
 
-Εμφανίζεται η ποσότητα του είδους ξεχωριστά για κάθε τοποθεσία/αποθήκη.
+Displays stock quantities grouped by warehouse location.
 
-### 3. Αναλυτική απογραφή ανά τοποθεσία, shelf και bin
+#### Detailed Inventory
 
-Εμφανίζεται αναλυτικά η ποσότητα του είδους ανά τοποθεσία, ράφι και θέση αποθήκευσης. Με αυτόν τον τρόπο ο χρήστης μπορεί να γνωρίζει ακριβώς πού βρίσκεται το προϊόν μέσα στην αποθήκη.
+Displays stock quantities by:
 
-Οι παραπάνω πληροφορίες εμφανίζονται ανάλογα με την επιλογή του χρήστη, μέσω κουμπιών στη φόρμα.
+* Location
+* Shelf
+* Bin
 
-## Γενική Απογραφή
+This allows users to identify the exact storage position of an item.
 
-Στη φόρμα γενικής απογραφής εμφανίζεται ένας συνολικός κατάλογος όλων των ειδών που υπάρχουν στις αποθήκες.
+### General Inventory
 
-Η εμφάνιση γίνεται σε μορφή πίνακα και περιλαμβάνει τα εξής στοιχεία:
+Displays a complete inventory list containing:
 
-* Κωδικός Είδους
-* Περιγραφή Είδους
-* Συνολική Ποσότητα
+* Item Code
+* Item Description
+* Quantity
 
-Η ποσότητα υπολογίζεται ως σύνολο από όλες τις αποθήκες και τοποθεσίες. Έτσι ο χρήστης μπορεί να έχει μια γενική εικόνα του συνολικού αποθέματος της επιχείρησης.
+The quantity shown represents the total stock available across all warehouse locations.
 
-## Αναζήτηση Ειδών προς Επαναπαραγγελία
+### Reorder Report
 
-Στη φόρμα αυτή εμφανίζονται όλα τα είδη των οποίων το διαθέσιμο απόθεμα είναι μικρότερο από το Safety Stock Level.
+Displays all items with stock levels below their Safety Stock Level.
 
-Το πρόγραμμα συγκρίνει την τρέχουσα ποσότητα κάθε είδους με το ελάχιστο επιτρεπτό όριο ασφαλείας. Όσα είδη βρίσκονται κάτω από αυτό το όριο εμφανίζονται σε πίνακα, ώστε ο χρήστης να γνωρίζει ποια προϊόντα πρέπει να επαναπαραγγελθούν.
+The report helps identify products that require replenishment before stock shortages occur.
 
-Για κάθε είδος εμφανίζονται βασικές πληροφορίες όπως:
+For each item, the following information is displayed:
 
-* Κωδικός Είδους
-* Περιγραφή Είδους
-* Τρέχουσα Ποσότητα
+* Item Code
+* Description
+* Current Quantity
 * Safety Stock Level
 
-Με αυτόν τον τρόπο το πρόγραμμα βοηθάει στην καλύτερη παρακολούθηση του αποθέματος και στην αποφυγή ελλείψεων.
+## Technologies Used
 
-## Συμπέρασμα
+* C#
+* Windows Forms
+* SQL Server
+* ADO.NET
+* DataGridView
 
-Το πρόγραμμα που αναπτύχθηκε παρέχει βασικές λειτουργίες διαχείρισης αποθήκης και απογραφής. Ο χρήστης μπορεί εύκολα να αναζητήσει προϊόντα, να δει τη συνολική ή αναλυτική απογραφή τους και να εντοπίσει ποια είδη χρειάζονται επαναπαραγγελία.
+## Application Structure
 
-Η χρήση διαφορετικών φορμών για κάθε λειτουργία κάνει την εφαρμογή πιο καθαρή, οργανωμένη και εύχρηστη.
+The application is divided into separate forms:
+
+### Main Menu
+
+Provides access to all system functions.
+
+### Item Search Form
+
+Allows users to search for items and view inventory information.
+
+### General Inventory Form
+
+Displays all inventory items and stock quantities.
+
+### Reorder Report Form
+
+Displays products that need to be reordered.
+
+## Learning Objectives
+
+This project demonstrates:
+
+* Database connectivity using ADO.NET
+* SQL query execution
+* Windows Forms development
+* DataGridView data presentation
+* Inventory management concepts
+* User interface design
+
+## Author
+
+Argyris Leakos
