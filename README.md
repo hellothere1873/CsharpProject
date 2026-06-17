@@ -13,6 +13,8 @@ The application was designed to simplify inventory tracking and provide quick ac
 Users can search for an item by:
 
 * Item code
+* <img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/329d5419-b638-4c96-b86f-8461167b7be3" />
+
 * Full item description
 * Partial item description
 
