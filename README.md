@@ -13,22 +13,17 @@ The application was designed to simplify inventory tracking and provide quick ac
 Users can search for an item by:
 
 * Item code
- <img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/329d5419-b638-4c96-b86f-8461167b7be3" />
 
 * Full item description
-  <img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/04cfad16-36b0-40ac-97af-2d7f6fbe109f" />
 
 * Partial item description
-  <img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/3a20f093-cc30-4442-af70-6852a90eee24" />
 
 
 If multiple matching items are found, the results are displayed in a DataGridView, allowing the user to select the desired item by double-clicking it.
 
-<img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/486c6276-de1a-4407-af0b-a7155b183893" />
-Before double-click ^
+Before double-click 
 
-<img width="798" height="482" alt="image" src="https://github.com/user-attachments/assets/263eb8ff-2ad1-42c7-94b2-50d1e5ebaa8c" />
-After ^
+After 
 
 After selecting an item, the following information can be displayed:
 
