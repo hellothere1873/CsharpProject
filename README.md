@@ -40,10 +40,14 @@ After
 </p>
 
 After selecting an item, the following information can be displayed:
+<p align="center">
+  <img src="Screenshots/MenuScreenshot.png">
+</p>
 
 #### Total Inventory
 
 Displays the total quantity available across all warehouse locations.
+
 
 #### Inventory by Location
 
