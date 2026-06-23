@@ -18,10 +18,14 @@ Users can search for an item by:
 </p>
 
 * Full item description
-
+<p align="center">
+  <img src="Screenshots/Full_ItemDescriptionScreen.png">
+</p>
 
 * Partial item description
-
+<p align="center">
+  <img src="Screenshots/Partial_ItemDescriptionScreen.png">
+</p>
 
 If multiple matching items are found, the results are displayed in a DataGridView, allowing the user to select the desired item by double-clicking it.
 
