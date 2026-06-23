@@ -77,7 +77,9 @@ Displays a complete inventory list containing:
 * Item Code
 * Item Description
 * Quantity
-
+<p align="center">
+  <img src="Screenshots/GeneralStockScreen.png">
+</p>
 The quantity shown represents the total stock available across all warehouse locations.
 
 ### Reorder Report
