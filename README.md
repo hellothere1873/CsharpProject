@@ -39,26 +39,27 @@ After
   <img src="Screenshots/DoubleClickSelectScreen.png">
 </p>
 
-After selecting an item, the following information can be displayed:
+After selecting an item, you can choose one of the following functions via the buttons below:
 <p align="center">
   <img src="Screenshots/MenuScreenshot.png">
 </p>
+Depending on the choice the following information can be displayed:
 
-#### Total Inventory
+#### Total Inventory(General Stock of chosen product button)
 
 Displays the total quantity available across all warehouse locations.
 <p align="center">
   <img src="Screenshots/Total_InventoryScreen.png">
 </p>
 
-#### Inventory by Location
+#### Inventory by Location(Entirety of stock of chosen product separated by warehouses/locations button)
 
 Displays stock quantities grouped by warehouse location.
 <p align="center">
   <img src="Screenshots/InventoryByLocationScreen.png">
 </p>
 
-#### Detailed Inventory
+#### Detailed Inventory(Stock of chosen product in each location with specific storage details button)
 
 Displays stock quantities by:
 
@@ -85,7 +86,9 @@ The quantity shown represents the total stock available across all warehouse loc
 ### Reorder Report
 
 Displays all items with stock levels below their Safety Stock Level.
-
+<p align="center">
+  <img src="Screenshots/LowStockProductsScreen.png">
+</p>
 The report helps identify products that require replenishment before stock shortages occur.
 
 For each item, the following information is displayed:
@@ -102,6 +105,9 @@ For each item, the following information is displayed:
 * SQL Server
 * ADO.NET
 * DataGridView
+* AdventureWorks2022 Database https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms
+* SQL Server Managment Studio
+
 
 ## Application Structure
 
