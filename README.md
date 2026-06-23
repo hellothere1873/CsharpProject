@@ -1,5 +1,11 @@
 # Warehouse Inventory Management System
 
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-.NET-blue">
+  <img src="https://img.shields.io/badge/SQL%20Server-Database-red">
+  <img src="https://img.shields.io/badge/Windows-Forms-green">
+</p>
+
 ## Overview
 
 This project is a warehouse inventory management application developed in C# and SQL Server AdventureWorks2022. The system allows users to search inventory items, view stock levels, monitor inventory across warehouse locations, and identify products that require replenishment.
@@ -129,16 +135,25 @@ Displays all inventory items and stock quantities.
 
 Displays products that need to be reordered.
 
-## Learning Objectives
 
-This project demonstrates:
+## Skills Demonstrated
 
-* Database connectivity using ADO.NET
-* SQL query execution
-* Windows Forms development
-* DataGridView data presentation
-* Inventory management concepts
-* User interface design
+- Object-Oriented Programming (OOP)
+- SQL Database Design
+- ADO.NET
+- CRUD Operations
+- DataGridView Integration
+- User Interface Design
+- SQL Query Optimization
+
+## Installation
+
+1. Clone the repository
+2. Restore the AdventureWorks2022 database
+3. Update the SQL Server connection string
+4. Open the solution in Visual Studio
+5. Build and run the application
+
 
 ## Author
 
