@@ -12,6 +12,10 @@ This project is a warehouse inventory management application developed in C# and
 
 The application was designed to simplify inventory tracking and provide quick access to stock information through a user-friendly interface.
 
+<p align="center">
+  <img src="Screenshots/MenuScreenshot.png">
+</p>
+
 ## Features
 
 ### Item Search
