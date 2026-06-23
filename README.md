@@ -116,7 +116,7 @@ For each item, the following information is displayed:
 * ADO.NET
 * DataGridView
 * AdventureWorks2022 Database https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms (AdventureWorks2022.bak)
-* SQL Server Managment Studio
+* SQL Server Management Studio
 
 
 ## Application Structure
