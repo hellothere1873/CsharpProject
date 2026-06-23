@@ -30,8 +30,14 @@ Users can search for an item by:
 If multiple matching items are found, the results are displayed in a DataGridView, allowing the user to select the desired item by double-clicking it.
 
 Before double-click 
+<p align="center">
+  <img src="Screenshots/UnselectedID.png">
+</p>
 
 After 
+<p align="center">
+  <img src="Screenshots/DoubleClickSelectScreen.png">
+</p>
 
 After selecting an item, the following information can be displayed:
 
