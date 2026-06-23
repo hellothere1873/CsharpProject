@@ -47,11 +47,16 @@ After selecting an item, the following information can be displayed:
 #### Total Inventory
 
 Displays the total quantity available across all warehouse locations.
-
+<p align="center">
+  <img src="Screenshots/Total_InventoryScreen.png">
+</p>
 
 #### Inventory by Location
 
 Displays stock quantities grouped by warehouse location.
+<p align="center">
+  <img src="Screenshots/InventoryByLocationScreen.png">
+</p>
 
 #### Detailed Inventory
 
@@ -60,7 +65,9 @@ Displays stock quantities by:
 * Location
 * Shelf
 * Bin
-
+<p align="center">
+  <img src="Screenshots/DetailedInventoryScreen.png">
+</p>
 This allows users to identify the exact storage position of an item.
 
 ### General Inventory
