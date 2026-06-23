@@ -13,8 +13,12 @@ The application was designed to simplify inventory tracking and provide quick ac
 Users can search for an item by:
 
 * Item code
+<p align="center">
+  <img src="Screenshots/SearchByItemCodeScreen.png">
+</p>
 
 * Full item description
+
 
 * Partial item description
 
