@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a warehouse inventory management application developed in C# and SQL Server. The system allows users to search inventory items, view stock levels, monitor inventory across warehouse locations, and identify products that require replenishment.
+This project is a warehouse inventory management application developed in C# and SQL Server AdventureWorks2022. The system allows users to search inventory items, view stock levels, monitor inventory across warehouse locations, and identify products that require replenishment.
 
 The application was designed to simplify inventory tracking and provide quick access to stock information through a user-friendly interface.
 
@@ -105,7 +105,7 @@ For each item, the following information is displayed:
 * SQL Server
 * ADO.NET
 * DataGridView
-* AdventureWorks2022 Database https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms
+* AdventureWorks2022 Database https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms (AdventureWorks2022.bak)
 * SQL Server Managment Studio
 
 
